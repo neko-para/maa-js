@@ -1,0 +1,14 @@
+{
+  "name": "@nekosu/maa-js",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20",
+    "prettier": "^3.3.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "koffi": "^2.8.9"
+  }
+}
