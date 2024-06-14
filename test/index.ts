@@ -1,7 +1,14 @@
-import { setGlobalOption, setup, version } from '..'
+import { fw, fwapi } from '..'
 import { GlobalOptionEnum } from '../src/fw/def'
 
-setup('./maa')
+fw.setup('./maa')
 
-console.log(setGlobalOption(GlobalOptionEnum.LogDir, './log'))
-console.log(version())
+console.log(fw.setLogDir('./log'))
+console.log(fw.version())
+
+async function main() {
+  fwapi.postFindDevice()
+  console.log(await fwapi.waitForFindDeviceToComplete())
+}
+
+main()

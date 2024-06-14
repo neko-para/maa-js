@@ -1,4 +1,4 @@
 {
   "extends": "@tsconfig/node20",
-  "include": ["src/**.ts"]
+  "include": ["src/**/*.ts"]
 }

@@ -4,11 +4,14 @@ import {
   Bool,
   GlobalOption,
   GlobalOptionEnum,
+  LoggingLevelEnum,
   OptionValue,
   OptionValueSize,
   StringView
 } from '../def'
 import { libFW } from '../lib'
+
+export { GlobalOptionEnum, LoggingLevelEnum }
 
 export function version(): StringView {
   const f = libFW.acquire('MaaVersion', StringView, [])
